@@ -1,13 +1,10 @@
 *** Settings ***
 Library           SeleniumLibrary
-
-*** Variables ***
-${URL}            https://campaignist.io
-${BROWSER}        Chrome
+Resource         ../resources/campaignist_keywords.resource
 
 *** Keywords ***
 Open Site
-    Open Browser    ${URL}    ${BROWSER}
+    Open Browser    ${URL}    ${HEADLESS_BROWSER}
     Maximize Browser Window
 
 *** Test Cases ***

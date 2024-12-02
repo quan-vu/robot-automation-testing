@@ -1,6 +1,5 @@
-*** Keywords ***
-Login To Application
-    [Arguments]    ${username}    ${password}
-    Input Text     id:username    ${username}
-    Input Text     id:password    ${password}
-    Click Button   css:button.radius
+
+*** Variables ***
+${URL}            https://campaignist.io
+${BROWSER}        Chrome
+${HEADLESS_BROWSER}    headlesschrome
