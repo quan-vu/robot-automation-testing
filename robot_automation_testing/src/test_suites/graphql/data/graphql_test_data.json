@@ -1,0 +1,10 @@
+{
+    "examples": {
+        "query": "query { hello(name: \"World\") }",
+        "response": {
+            "data": {
+                "hello": "Hello, World!"
+            }
+        }
+    }
+}
